@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt_BR" ng-app="hprpsite">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>HardPlay - Roleplay GTA V</title>
+	<!-- Bootstrap Core CSS -->
+	<link rel="shortcut icon" href="img/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="main-body" onload="CoreScript.init()"
+	ng-controller="mainPageCtrl" ng-init="init()">
+	<!-- Navigation -->
+	<nav id="nav-topo" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive logo-top"></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="buttons-menu" class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="text-uppercase nav navbar-nav buttons-nav">
+					<li class="active"><a href="index">Home</a></li>
+					<li><a href="{{forum_link}}">Fórum</a></li>
+					<li><a href="legislacao.html">Legislação</a></li>
+					<li><a href="" data-toggle="modal" data-target="#frm-whitelist">Whitelist</a></li>
+					<li><a href="#">Loja</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<!-- Full Page Image Background Carousel Header -->
+	<header id="headermain">
+		<div class="vide" data-vide-bg="video/video.mp4"
+			data-vide-options="loop: true, muted: true, position: 0% 0%">
+			<div class="main-text">
+				<h1 class="text-uppercase main-title">
+					<strong>HardPlay, Você conectado ao melhor!</strong>
+				</h1>
+				<br />
+				<h4>Quer uma real experiência RP, e com a melhor qualidade?</h4>
+				<h4>Então peça já seu acesso ao game em nosso Whitelist!</h4>
+				<br /> 
+					<a href="#jogar"><button type="button" class="text-uppercase btn btn-default btn-saibamais">Saiba Mais</button></a>
+				<button type="button" class="text-uppercase btn btn-default btn-hprp" data-toggle="modal" data-target="#frm-whitelist">Whitelist</button>
+			</div>
+		</div>
+	</header>
+	<!-- Page Content -->
+	<section id="jogar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<h1>
+						<strong>Venha Jogar no HardPlay!</strong>
+					</h1>
+					<p>O mais novo e organizado servidor de Roleplay do GTA V!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="forum">
+		<div class="container text-right">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<h1>
+						<strong>Fórum HardPlay</strong>
+					</h1>
+					<p>Para reportar problemas in-game, dúvidas em geral, reports, interações, e mais, acesse nosso fórum!</p>
+					<a href="{{forum_link}}"><button type="button" class="btn btn-default btn-forum">Acessar o Fórum</button></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="legislacao">
+		<div class="container text-left">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<h1>
+						<strong>Novos Jogadores</strong>
+					</h1>
+					<p>O que é Roleplay? Saiba tudo o que você precisa fazer para entender o estilo de jogo RP.</p>
+					<button type="button" class="btn btn-default btn-legislacao">Legislação</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sec-footer" ng-include="'footer.html'"></section>
+
+	<footer id="footer">
+		<div class="row">
+			<div class="col-md-12 col-md-offset-1">
+				<a> Status do Servidor (1): <strong ng-class="{'server_on': server_status_1 == 'ON','server_off': server_status_1 == 'OFF'}">{{server_status_1}} - 35.198.62.112:30120</strong>
+				</a> <br> <a>Status do Servidor (2): <strong ng-class="{'server_on': server_status_2 == 'ON','server_off': server_status_2 == 'OFF'}">{{server_status_2}} - 35.199.107.53:30120</strong></a> -
+			</div>
+		</div>
+	</footer>
+
+	<!-- MODAL DE WHITELIST -->
+	<div ng-include="'modal_whitelist.html'"></div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="lib/jquery.vide.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Angular Core Build -->
+	<script src="lib/angular.js" type="text/javascript"></script>
+	<script src="lib/angular-locale_pt-br.js" type="text/javascript"></script>
+	<script src="lib/angular-messages.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+	<script src="js/controllers/mainPageCtrl.js" type="text/javascript"></script>
+</body>
+</html>

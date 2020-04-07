@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.body-whitelist{
+	background-image: url('../img/form-bg.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-body{
+	background-color: #000;
+}
+
+.vide {
+  height:100vh;
+}
+
+#nav-topo{
+	background-color: #303131;
+	background-image: url('../img/top-bg.jpg');
+	height: 90px;
+}
+
+#nav-topo li{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#nav-topo a{
+	color: #fff;
+}
+
+.logo-top{
+	width: 160px;
+	margin-top: -10px;
+}
+
+#buttons-menu{
+	margin-top: 18px;
+}
+
+#buttons-menu .buttons-nav li{
+	border: 1px solid #00EE00;
+	margin-left: 15px;
+}
+
+#buttons-menu .buttons-nav li:hover{
+	background-color: #000;
+}
+
+.server_on{
+	color: #00EE00;
+}
+
+.server_off{
+	color: #FF0000;
+}
+
+.main-text{
+	position: absolute;
+	height: 300px;
+	width: auto;
+	background: transparent;
+	margin-left: 20px;
+	margin-top: 19%;
+	color: #fff;
+}
+
+.main-title{
+	font-size: 45px;
+}
+
+h4 a{
+	color: #00EE00;
+}
+
+.btn-hprp{
+	border-color: #00EE00;
+	background-color: rgba(0, 238, 0, 0.5);
+	color: #fff;
+	width: 200px;
+	height: 45px;
+	font-size: 16px;
+}
+
+.btn-hprp:hover{
+	border-color: #00EE00;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 200px;
+	height: 45px;
+}
+
+.btn-forum{
+	border-color: #FF4500;
+	background-color: rgba(255, 69, 0, 1);
+	color: #fff;
+	width: 200px;
+}
+
+.btn-forum:hover{
+	border-color: #FF4500;
+	background-color: rgba(255, 127, 0, 1);
+	color: #fff;
+	width: 200px;
+}
+
+.btn-saibamais{
+	border-color: #00EE00;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 200px;
+	height: 45px;
+}
+
+.btn-saibamais:hover{
+	border-color: #00EE00;
+	background-color: rgba(0, 238, 0, 0.5);
+	color: #fff;
+	width: 200px;
+	height: 45px;
+}
+
+.btn-legislacao{
+	border-color: #008B00;
+	background-color: #008B00;
+	color: #fff;
+	width: 200px;
+}
+
+.btn-legislacao:hover{
+	border-color: #00CD00;
+	background-color: #00CD00;
+	color: #fff;
+	width: 200px;
+}
+
+#footer {
+    position: fixed;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #00EE00;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
+    margin-bottom: 0px;
+    width: 350px;
+}
+
+#footer a{
+	color: #fff;
+}
+
+/* ----- SECTIONS ------*/
+section{
+	margin-top: 4px;
+}
+
+#jogar{
+	height: 300px;
+	background-color: #8B008B;
+	background-image: url('../img/section_hp.jpg');
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    color: #fff;
+}
+
+#forum{
+	height: 300px;
+	background-color: #008B8B;
+	background-image: url('../img/section_forum.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#legislacao{
+	height: 300px;
+	background-color: #008B8B;
+	color: #fff;
+	background-image: url('../img/section_legislacao.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#sec-footer{
+	height: 70px;
+	background-color: #000;
+	color: #fff;
+}
+
+#sec-footer a{
+	color: #00EE00;
+}
+
+#regras{
+	margin-top: 5%;
+}
